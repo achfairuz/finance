@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:finance/core/services/api_url.dart';
 
 class ApiService {
-  final BaseURL = 'https://42a1a9094441.ngrok-free.app';
-
   Future<Map<String, dynamic>> post(
     String endpoint,
     Map<String, dynamic> body, {
