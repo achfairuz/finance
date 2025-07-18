@@ -4,6 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:finance/core/services/api_url.dart';
 
 class ApiService {
+  final BaseURL = '{{ BASEURL }}';
+
   Future<Map<String, dynamic>> post(
     String endpoint,
     Map<String, dynamic> body, {
